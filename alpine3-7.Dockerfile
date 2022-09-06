@@ -2,7 +2,7 @@
 #
 # This stage will be the base image for the rest of the stages, and will include
 # the required packages for the final wkhtmltopdf executable to work properly:
-FROM alpine:3.7 AS runtime-deps
+FROM alpine:3.16 AS runtime-deps
 
 # 1: Set the wkhtmltopdf version into an environment variable:
 ENV WKHTMLTOX_VERSION=0.12.5
